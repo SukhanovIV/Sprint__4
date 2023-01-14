@@ -1,8 +1,15 @@
 from selenium.webdriver.common.by import By
 
 
-class DropDownLocators:
+class MainLocators:
 
+    button_to_find = [By.XPATH, "//*[@type='submit']"]  # Кнопка "Найти" на новой вкладке
+    button_cookies = [By.XPATH, "//*[@class='App_CookieButton__3cvqF']"]  # Кнопка "да все привыкли" для согласия на куки-файлы
+    logo_yandex = [By.XPATH, "//*[@alt='Yandex']"]  # Логотип "Яндекса"
+    logo_scooter = [By.XPATH, "//*[@alt='Scooter']"]  # Логотип "Самоката"
+    main_inscription = [By.XPATH, "(//*[@class='Home_SubHeader__zwi_E'])[1]"]  # Надпись "Привезём его прямо к вашей двери, а когда накатаетесь — заберём"
+    order_top = [By.XPATH, "//*[@class='Button_Button__ra12g']"]  # Кнопка "Заказать" сверху
+    order_down = [By.XPATH, "//*[@class='Button_Button__ra12g Button_Middle__1CSJM']"]  # Кнопка "Заказать" снизу
     question_1 = [By.XPATH, "//div[@id='accordion__heading-0']"]  # "Сколько это стоит? И как оплатить?"
     question_2 = [By.XPATH, "//div[@id='accordion__heading-1']"]  # "Хочу сразу несколько самокатов! Так можно?"
     question_3 = [By.XPATH, "//div[@id='accordion__heading-2']"]  # "Как рассчитывается время аренды?"
