@@ -9,5 +9,5 @@ class ScooterOwnerLocators:
     address_input_field = [By.XPATH, "//*[@placeholder='* Адрес: куда привезти заказ']"]  # Поле ввода "Адрес"
     metro_sokolniki = [By.XPATH, "//*[@data-index='3']"]  # Метро"Сокольники"
     metro_sokol = [By.XPATH, "//*[@data-index='25']"]  # Метро"Сокол"
-    station_selection_field = [By.XPATH, "//*[@class='select-search__input']"]  # Поле выбора станции
+    station_selection_field = [By.XPATH, "//*[@placeholder='* Станция метро']"]  # Поле выбора станции
     phone_input_field = [By.XPATH, "//*[@placeholder='* Телефон: на него позвонит курьер']"]  # Поле ввода "Телефон"

@@ -15,7 +15,7 @@ class Example:
 def driver():
     options = Options()
     options.add_argument('--window-size=1920,1080')
-    options.add_argument('--headless')
+    #options.add_argument('--headless')
     driver = webdriver.Firefox(options=options)
     driver.get('https://qa-scooter.praktikum-services.ru/')
     yield driver
